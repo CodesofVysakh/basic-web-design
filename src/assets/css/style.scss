@@ -58,6 +58,7 @@ img {
                 li {
                     // width: 50%;
                     margin-left: 20px;
+                    cursor: pointer;
                 }
             }
         }
@@ -65,7 +66,7 @@ img {
 }
 
 .footer-main-box {
-    padding: 20px;
+    padding: 20px 0;
     background-color: #ffc37f;
 
     .top{
@@ -190,5 +191,65 @@ img {
 
     .button-div {
         text-align: center;
+    }
+}
+
+// Contact 
+.contact {
+    padding: 50px 0;
+
+    .section-title {
+        h3 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .content-box {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+
+        .left {
+            width: 50%;
+
+            .info-pack{
+                margin: 10px 0;
+            }
+        }
+        .right {
+            width: 50%;
+
+            form {
+                .form-essential{
+                    display: flex;
+                    justify-content: space-between;
+                    gap: 10px;
+                    margin-bottom: 10px;
+
+                    input {
+                        width: 48%;
+                        padding: 10px;
+                        border-radius: 5px;
+                    }
+                }
+                .subject {
+                    margin-bottom: 10px;
+                    input {
+                        width: 96%;
+                        padding: 10px;
+                        border-radius: 5px;
+                    }
+                }
+                .message {
+                    margin-bottom: 10px;
+                    textarea {
+                        width: 96%;
+                        padding: 10px;
+                        border-radius: 5px;
+                    }
+                }
+            }
+        }
     }
 }
