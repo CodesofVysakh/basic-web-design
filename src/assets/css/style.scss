@@ -3,6 +3,24 @@
     padding: 0;
 }
 
+body {
+    background-color: #e0721c57;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.button {
+    padding: 15px;
+    border-radius: 8px;
+    display: inline-block;
+    background-color: #b55f5ff0;
+    color: #ffffff;
+    cursor: pointer;
+}
+
 .wrapper {
     width: 90%;
     margin: 0 auto;
@@ -10,25 +28,37 @@
 
 // Header styles
 .header-main-box{
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-
-    .left {
-        width: 50%;
-    }
+    padding: 30px 20px;
+    background-color: #ffc37f;
+    .wrapper{
+        display: flex;
+        justify-content: space-between;
     
-    .header-nav-items {
-        width: 50%;
-
-        ul {
+        .left {
+            width: 50%;
+    
+            .header-logo-container {
+                width: 30px;
+                height: 30px;
+            }
+        }
+        
+        .header-nav-items {
+            width: 50%;
+            align-items: flex-end;
             display: flex;
-            justify-content: flex-end;
-            list-style: none;
-
-            li {
-                // width: 50%;
-                margin-left: 20px;
+            flex-direction: column;
+            justify-content: center;
+    
+            ul {
+                display: flex;
+                justify-content: flex-end;
+                list-style: none;
+    
+                li {
+                    // width: 50%;
+                    margin-left: 20px;
+                }
             }
         }
     }
@@ -36,19 +66,25 @@
 
 .footer-main-box {
     padding: 20px;
+    background-color: #ffc37f;
+
     .top{
         display: flex;
         justify-content: space-between;
     }
 
     .left{
-
+        .footer-logo-container {
+            width: 30px;
+            height: 30px;
+        }
     }
 
     .right {
         .social-icons-container {
             display: flex;
-            img {
+
+            .social-icons {
                 height: 20px;
                 width: 20px;
                 margin: 0 5px;
@@ -66,6 +102,93 @@
     }
 
     .bottom{
+        text-align: center;
+    }
+}
+
+// Hero Section
+.hero-main-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 50px;
+    height: calc(100vh - 140px);
+
+    .hero-main-box-left {
+        width: 50%;
+
+    }
+    .hero-main-box-right {
+        width: 40%;
+        h3{
+            font-size: 50px;
+            font-weight: 300;
+            margin-bottom: 15px;
+        }
+        
+        p{
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        // span{
+        //     padding: 15px;
+        //     border-radius: 8px;
+        //     display: inline-block;
+        //     background-color: #b55f5ff0;
+        //     color: #ffffff;
+        //     cursor: pointer;
+        // }
+    }
+}
+
+// Cards List
+.list-cards {
+    padding: 50px 0;
+    // background: linear-gradient(0deg, #fe6e0026, #ffcdae);
+
+    .title-content{
+        text-align: center;
+        margin-bottom: 30px;
+        h3{
+            text-align: center;
+            font-size: 50px;
+            font-weight: 300;
+        }
+    }
+
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        .card-box {
+            width: 22%;
+            margin: 10px 0 20px;
+            border: 3px solid #00000040;
+            border-radius: 5px;
+            overflow: hidden;
+            background-color: #fff;
+            cursor: pointer;
+
+            .img-container {
+
+            }
+
+            .content-box {
+                margin: 10px 0;
+                padding: 10px;
+                h6{
+                    font-size: 20px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+    }
+
+    .button-div {
         text-align: center;
     }
 }
