@@ -1,7 +1,8 @@
 {
-  "name": "https://codesofvysakh.github.io/basic-web-design/",
+  "name": "web-design-one",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://codesofvysakh.github.io/basic-web-design/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
